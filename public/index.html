@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Volatility Tracker</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the Chart.js library for rendering charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <!-- Main heading of the application -->
+        <h1>Crypto Volatility Tracker</h1>
+    </header>
+
+    <main>
+        <!-- Section displaying the list of most volatile cryptocurrencies -->
+        <section id="crypto-list">
+            <h2>Most Volatile Cryptocurrencies</h2>
+            <table>
+                <thead>
+                    <!-- Table headers for the cryptocurrency data -->
+                    <tr>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Price</th>
+                        <th>Volatility (%)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <!-- Table body where cryptocurrency data will be dynamically inserted -->
+                <tbody id="crypto-table"></tbody>
+            </table>
+        </section>
+
+        <!-- Section displaying the volatility chart -->
+        <section id="chart-section">
+            <h2>Volatility Chart</h2>
+            <!-- Canvas element where the Chart.js chart will be rendered -->
+            <canvas id="volatilityChart"></canvas>
+            <!-- Paragraph for additional reasoning or information -->
+            <p id="reasoning"></p>
+        </section>
+    </main>
+
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
